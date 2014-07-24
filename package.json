@@ -1,6 +1,27 @@
 {
   "name": "adapter-template",
   "version": "0.2.0",
+  "description": "Adapters to standardise the interfaces on the plethora of available templating engines.",
+  "keywords": [
+    "adapter", "template",
+
+    "express",
+
+    "atpl", "ejs", "jade", "toffee", "whiskers",
+
+    "consolidate"
+  ],
+  "homepage": "https://github.com/stakk/adapter-template",
+  "bugs": "https://github.com/stakk/adapter-template/issues",
+  "license": "MIT",
+  "main": "./lib/adapter",
+  "repository" : {
+    "type" : "git"
+  , "url" : "http://github.com/stakk/adapter-template.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
   "dependencies": {
     "broadway": "~0.2.9",
 
@@ -17,8 +38,4 @@
     "express": "~4.5.1",
     "supertest": "~0.13.0"
   },
-  "main": "./lib/adapter.js",
-  "scripts": {
-    "test": "mocha"
-  }
 }
