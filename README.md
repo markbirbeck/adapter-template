@@ -3,6 +3,8 @@ adapter-template
 
 Adapters to standardise the interfaces on the plethora of available templating engines.
 
+[![wercker status](https://app.wercker.com/status/b56d4ba83550c79c90a82f510dc523df/m/master "wercker status")](https://app.wercker.com/project/bykey/b56d4ba83550c79c90a82f510dc523df)
+
 # Express Support
 
 The easiest templating libraries to support are those that provide Express support by way of the `express()` method.
