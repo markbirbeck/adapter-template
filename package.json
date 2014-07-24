@@ -1,4 +1,6 @@
 {
+  "version": "0.1.0",
+  "name": "adapter-template",
   "dependencies": {
     "broadway": "~0.2.9",
 
