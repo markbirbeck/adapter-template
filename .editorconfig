@@ -23,3 +23,11 @@ insert_final_newline = true
 # Trailing white-space is ok in Markdown:
 #
 trim_trailing_whitespace = false
+
+[*.{atpl,ejs,whiskers}]
+
+# With some template engines a trailing newline will become part of the output.
+# Since this will mess up the tests we don't automatically add the newline in
+# templates that will pass it through:
+#
+insert_final_newline = false
