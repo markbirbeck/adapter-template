@@ -54,6 +54,7 @@ All that is required for these is to add an entry for an engine to the dependenc
 * atpl
 * ejs
 * jade
+* swig
 * toffee
 * whiskers
 
