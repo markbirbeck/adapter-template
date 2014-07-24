@@ -19,5 +19,10 @@ The easiest templating libraries to support are those that provide Express suppo
 
 # Changelog
 
+
+## 2014-07-25 (v0.2.0)
+Fix test dependencies for Wercker.
+Add Wercker status badge to README.
+
 ## 2014-07-25 (v0.1.0)
 Initial release with support for template engines that already provide Express support.
