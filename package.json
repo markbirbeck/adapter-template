@@ -7,7 +7,11 @@
 
     "express",
 
-    "atpl", "ejs", "jade", "toffee", "whiskers",
+    "atpl",
+    "ejs",
+    "jade",
+    "toffee",
+    "whiskers",
 
     "consolidate"
   ],
