@@ -59,6 +59,10 @@ All that is required for these is to add an entry for an engine to the dependenc
 
 # Changelog
 
+## 2014-07-25 (v0.4.0)
+`package.json` was breaking Wercker.
+Improve descriptions in `README`.
+
 ## 2014-07-25 (v0.3.0)
 Ensure package.json is ready for NPM publishing.
 
