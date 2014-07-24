@@ -1,6 +1,6 @@
 {
   "name": "adapter-template",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Adapters to standardise the interfaces on the plethora of available templating engines.",
   "keywords": [
     "adapter", "template",
@@ -37,5 +37,5 @@
 
     "express": "~4.5.1",
     "supertest": "~0.13.0"
-  },
+  }
 }
