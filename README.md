@@ -60,6 +60,9 @@ All that is required for these is to add an entry for an engine to the dependenc
 
 # Changelog
 
+## 2014-07-25 (v0.5.0)
+Add swig support.
+
 ## 2014-07-25 (v0.4.0)
 `package.json` was breaking Wercker.
 
