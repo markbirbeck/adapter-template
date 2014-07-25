@@ -44,7 +44,7 @@ Express requires a function that takes a path, locals and a callback, which `ren
 
 The easiest templating libraries to support are those that:
 
-* provide Express support by way of the `express()` method;
+* provide Express support by way of the `express()` or `renderFile()` method;
 * have the same module name as the template file extension.
 
 All that is required for these is to add an entry for an engine to the dependencies in `package.json`, and a template with the same file extension to the fixtures collection in the tests directory (see `test/fixtures`). This template will be picked up automatically when running tests, and its presence will cause a test to be run for the corresponding template engine.
