@@ -54,13 +54,18 @@ All that is required for these is to add an entry for an engine to the dependenc
 * atpl
 * ejs
 * jade
+* swig
 * toffee
 * whiskers
 
 # Changelog
 
+## 2014-07-25 (v0.5.0)
+Add swig support.
+
 ## 2014-07-25 (v0.4.0)
 `package.json` was breaking Wercker.
+
 Improve descriptions in `README`.
 
 ## 2014-07-25 (v0.3.0)
@@ -68,6 +73,7 @@ Ensure package.json is ready for NPM publishing.
 
 ## 2014-07-25 (v0.2.0)
 Fix test dependencies for Wercker.
+
 Add Wercker status badge to README.
 
 ## 2014-07-25 (v0.1.0)
