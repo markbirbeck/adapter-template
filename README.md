@@ -78,6 +78,11 @@ Without this entry the generic adapter will try to load a module called `handleb
 
 # Changelog
 
+## 2014-07-28 (v0.6.0)
+Add handlebars support.
+
+Enable modules to have a different name to the template language they support.
+
 ## 2014-07-25 (v0.5.0)
 Add swig support.
 
