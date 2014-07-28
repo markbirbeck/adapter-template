@@ -2,15 +2,30 @@
  * Basic engine support.
  */
 
+require('../lib/setModuleDefaults');
+
+var config = require('config');
+var engineConfig = config.engines ? config.engines : undefined;
+
 /**
  * Return a function that creates a plugin:
  */
 
-module.exports = function(engineName){
+module.exports = function(language){
   return {
     attach: function (/* options */){
-      this.engine = require(engineName);
+
+      /**
+       * If there is a specified engine for this language then use it,
+       * otherwise just use the provided name:
+       */
+
+      var module = (engineConfig && engineConfig[language])
+        ? engineConfig[language].module
+        : language;
+
+      this.engine = require(module);
     }
-  , name: 'adapter-' + engineName
+  , name: 'adapter-' + language
   };
 };
