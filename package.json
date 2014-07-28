@@ -3,8 +3,8 @@
   "version": "0.5.0",
   "description": "Adapters to standardise the interfaces on the plethora of available templating engines.",
   "keywords": [
-    "adapter", "template",
-
+    "adapter",
+    "template",
     "express",
 
     "atpl",
@@ -12,17 +12,15 @@
     "jade",
     "swig",
     "toffee",
-    "whiskers",
-
-    "consolidate"
+    "whiskers"
   ],
   "homepage": "https://github.com/stakk/adapter-template",
   "bugs": "https://github.com/stakk/adapter-template/issues",
   "license": "MIT",
   "main": "./lib/adapter",
-  "repository" : {
-    "type" : "git"
-  , "url" : "http://github.com/stakk/adapter-template.git"
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/stakk/adapter-template.git"
   },
   "scripts": {
     "test": "mocha"
@@ -32,10 +30,14 @@
 
     "atpl": "~0.7.7",
     "ejs": "~1.0.0",
+    "hbs": "~2.7.0",
     "jade": "~1.3.1",
     "swig": "~1.4.1",
     "toffee": "~0.1.12",
-    "whiskers": "~0.3.3"
+    "whiskers": "~0.3.3",
+
+    "config": "~1.0.1",
+    "js-yaml": "~3.1.0"
   },
   "devDependencies": {
     "mocha": "~1.21.0",

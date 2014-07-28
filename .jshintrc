@@ -3,6 +3,7 @@
 , "devel": true
 
 , "immed": true
+, "laxbreak": true
 , "laxcomma": true
 , "newcap": true
 , "unused": true
