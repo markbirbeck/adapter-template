@@ -6,11 +6,11 @@
  * Return a function that creates a plugin:
  */
 
-module.exports = function(engineName){
+module.exports = function(language){
   return {
     attach: function (/* options */){
-      this.engine = require(engineName);
+      this.engine = require(language);
     }
-  , name: 'adapter-' + engineName
+  , name: 'adapter-' + language
   };
 };
