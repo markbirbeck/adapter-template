@@ -9,6 +9,7 @@
 
     "atpl",
     "ejs",
+    "handlebars",
     "jade",
     "swig",
     "toffee",
