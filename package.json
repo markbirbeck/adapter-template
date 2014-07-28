@@ -3,8 +3,8 @@
   "version": "0.5.0",
   "description": "Adapters to standardise the interfaces on the plethora of available templating engines.",
   "keywords": [
-    "adapter", "template",
-
+    "adapter",
+    "template",
     "express",
 
     "atpl",
@@ -20,9 +20,9 @@
   "bugs": "https://github.com/stakk/adapter-template/issues",
   "license": "MIT",
   "main": "./lib/adapter",
-  "repository" : {
-    "type" : "git"
-  , "url" : "http://github.com/stakk/adapter-template.git"
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/stakk/adapter-template.git"
   },
   "scripts": {
     "test": "mocha"
