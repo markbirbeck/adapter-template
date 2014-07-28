@@ -12,9 +12,7 @@
     "jade",
     "swig",
     "toffee",
-    "whiskers",
-
-    "consolidate"
+    "whiskers"
   ],
   "homepage": "https://github.com/stakk/adapter-template",
   "bugs": "https://github.com/stakk/adapter-template/issues",
