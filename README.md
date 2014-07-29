@@ -74,6 +74,7 @@ If the templating engine to add is not Express-compatible but does support a `re
 
 * atpl
 * ejs
+* haml
 * handlebars
 * jade
 * swig
