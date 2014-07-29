@@ -66,6 +66,10 @@ handlebars: {
 
 Without this entry the generic adapter will try to load a module called `handlebars`.
 
+## Adding a Template Engine That Supports a render() Method
+
+If the templating engine to add is not Express-compatible but does support a `render()` method then a `renderFile()` method will be created for it automatically.
+
 # Template Languages Supported:
 
 * atpl
