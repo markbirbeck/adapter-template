@@ -25,6 +25,13 @@ module.exports = function(language){
         : language;
 
       this.engine = require(module);
+
+      /**
+       * Add key methods:
+       */
+
+      this.__express = this.engine.__express || undefined;
+      this.renderFile = this.engine.renderFile || undefined;
     }
   , name: 'adapter-' + language
   };
