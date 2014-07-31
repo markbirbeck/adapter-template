@@ -28,6 +28,13 @@ See the [adapter-template wiki](https://github.com/stakk/adapter-template/wiki) 
 
 # Changelog
 
+## 2014-07-31 (v0.8.0)
+Add ECT support.
+
+Allow for engine modules that return a constructor.
+
+Allow the name of an engine's main function to be set in the configuration.
+
 ## 2014-07-31 (v0.7.0)
 Add Liquid support.
 
