@@ -22,6 +22,7 @@ module.exports = function(language){
        */
 
       this.engine = require(languageConfig.module || language);
+      this.languageConfig = languageConfig;
 
       /**
        * Add key methods:
