@@ -16,6 +16,7 @@ See the [adapter-template wiki](https://github.com/stakk/adapter-template/wiki) 
 # Template Languages Supported:
 
 * atpl
+* ect
 * ejs
 * haml
 * handlebars
