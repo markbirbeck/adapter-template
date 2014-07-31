@@ -28,8 +28,11 @@ module.exports = function(language){
        * Add key methods:
        */
 
+      var renderFileMethodName = languageConfig.renderFileMethodName
+        || 'renderFile';
+
       this.__express = this.engine.__express || undefined;
-      this.renderFile = this.engine.renderFile || undefined;
+      this.renderFile = this.engine[renderFileMethodName] || undefined;
       this.render = this.engine.render || undefined;
     }
   , name: 'adapter-' + language
