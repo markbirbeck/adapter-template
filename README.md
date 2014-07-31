@@ -89,7 +89,7 @@ Add Liquid support.
 
 Add Haml support.
 
-Enable modules to provide synchronous or asynchrnous `render()` methods.
+Enable modules to provide synchronous or asynchronous `render()` methods.
 
 Create a `render()` method of an engine does not provide one.
 
