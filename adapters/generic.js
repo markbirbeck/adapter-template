@@ -21,15 +21,20 @@ module.exports = function(language){
        * otherwise just use the provided name:
        */
 
-      this.engine = require(languageConfig.module || language);
+      var engine = require(languageConfig.module || language);
+
+      this.engine = (languageConfig.useConstructor) ? new engine() : engine;
       this.languageConfig = languageConfig;
 
       /**
        * Add key methods:
        */
 
+      var renderFileMethodName = languageConfig.renderFileMethodName
+        || 'renderFile';
+
       this.__express = this.engine.__express || undefined;
-      this.renderFile = this.engine.renderFile || undefined;
+      this.renderFile = this.engine[renderFileMethodName] || undefined;
       this.render = this.engine.render || undefined;
     }
   , name: 'adapter-' + language

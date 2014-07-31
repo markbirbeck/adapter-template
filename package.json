@@ -1,6 +1,6 @@
 {
   "name": "adapter-template",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Adapters to standardise the interfaces on the plethora of available templating engines.",
   "keywords": [
     "adapter",
@@ -8,6 +8,7 @@
     "express",
 
     "atpl",
+    "ect",
     "ejs",
     "haml",
     "handlebars",
@@ -32,6 +33,7 @@
     "broadway": "~0.2.9",
 
     "atpl": "~0.7.7",
+    "ect": "~0.5.9",
     "ejs": "~1.0.0",
     "haml": "~0.4.3",
     "hbs": "~2.7.0",
