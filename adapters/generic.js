@@ -5,7 +5,7 @@
 require('../lib/setModuleDefaults');
 
 var config = require('config');
-var engineConfig = config.engines ? config.engines : undefined;
+var engineConfig = config.engines || {};
 
 /**
  * Return a function that creates a plugin:
@@ -14,17 +14,23 @@ var engineConfig = config.engines ? config.engines : undefined;
 module.exports = function(language){
   return {
     attach: function (/* options */){
+      var languageConfig = engineConfig[language] || {};
 
       /**
        * If there is a specified engine for this language then use it,
        * otherwise just use the provided name:
        */
 
-      var module = (engineConfig && engineConfig[language])
-        ? engineConfig[language].module
-        : language;
+      this.engine = require(languageConfig.module || language);
+      this.languageConfig = languageConfig;
 
-      this.engine = require(module);
+      /**
+       * Add key methods:
+       */
+
+      this.__express = this.engine.__express || undefined;
+      this.renderFile = this.engine.renderFile || undefined;
+      this.render = this.engine.render || undefined;
     }
   , name: 'adapter-' + language
   };

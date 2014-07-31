@@ -49,7 +49,7 @@ The easiest templating libraries to support are those that:
 
 All that is required for these is to add an entry for an engine to the dependencies in `package.json`, and a template with the same file extension to the fixtures collection in the tests directory (see `test/fixtures`). This template will be picked up automatically when running tests, and its presence will cause a test to be run for the corresponding template engine.
 
-# Adding an Express-compatible Engine Named Differently to Its Language
+## Adding an Express-compatible Engine Named Differently to Its Language
 
 The next most simple templating engine to support are those that:
 
@@ -66,17 +66,32 @@ handlebars: {
 
 Without this entry the generic adapter will try to load a module called `handlebars`.
 
+## Adding a Template Engine That Supports a render() Method
+
+If the templating engine to add is not Express-compatible but does support a `render()` method then a `renderFile()` method will be created for it automatically.
+
 # Template Languages Supported:
 
 * atpl
 * ejs
+* haml
 * handlebars
 * jade
+* liquid
 * swig
 * toffee
 * whiskers
 
 # Changelog
+
+## 2014-07-31 (v0.7.0)
+Add Liquid support.
+
+Add Haml support.
+
+Enable modules to provide synchronous or asynchrnous `render()` methods.
+
+Create a `render()` method of an engine does not provide one.
 
 ## 2014-07-28 (v0.6.0)
 Add handlebars support.
