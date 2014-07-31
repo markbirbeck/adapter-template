@@ -42,7 +42,7 @@ Add Haml support.
 
 Enable modules to provide synchronous or asynchronous `render()` methods.
 
-Create a `render()` method of an engine does not provide one.
+Create a `render()` method if an engine does not provide one.
 
 ## 2014-07-28 (v0.6.0)
 Add handlebars support.
