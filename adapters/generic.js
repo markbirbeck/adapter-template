@@ -30,6 +30,7 @@ module.exports = function(language){
 
       this.__express = this.engine.__express || undefined;
       this.renderFile = this.engine.renderFile || undefined;
+      this.render = this.engine.render || undefined;
     }
   , name: 'adapter-' + language
   };
