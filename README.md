@@ -84,6 +84,15 @@ If the templating engine to add is not Express-compatible but does support a `re
 
 # Changelog
 
+## 2014-07-31 (v0.7.0)
+Add Liquid support.
+
+Add Haml support.
+
+Enable modules to provide synchronous or asynchrnous `render()` methods.
+
+Create a `render()` method of an engine does not provide one.
+
 ## 2014-07-28 (v0.6.0)
 Add handlebars support.
 
