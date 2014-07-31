@@ -24,7 +24,7 @@ insert_final_newline = true
 #
 trim_trailing_whitespace = false
 
-[*.{atpl,ejs,whiskers}]
+[*.{atpl,ejs,handlebars,liquid,swig,toffee,whiskers}]
 
 # With some template engines a trailing newline will become part of the output.
 # Since this will mess up the tests we don't automatically add the newline in
