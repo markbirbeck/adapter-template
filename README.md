@@ -77,6 +77,7 @@ If the templating engine to add is not Express-compatible but does support a `re
 * haml
 * handlebars
 * jade
+* liquid
 * swig
 * toffee
 * whiskers
