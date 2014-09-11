@@ -38,23 +38,24 @@ describe('Express', function(){
    */
 
   var fs = require('fs');
-  var regex = /^user\.(.*)$/;
+  var regex = /^(user|filter)\.(.*)$/;
 
   fs.readdirSync(viewsDir).map(function (filename){
     it(filename, function (done){
       filename.should.match(
         regex
-      , 'Use \'user.engine\' as template name, where \'engine\' is engine name.'
+      , 'Use \'user.engine\' or \'filter.engine\' as the template name,' +
+        ' where \'engine\' is the engine name.'
       );
 
       var matches = filename.match(regex);
-      var engineName = matches[1];
+      var engineName = matches[2];
 
       var app = createApp(engineName, filename, viewsDir);
 
       request(app)
         .get('/')
-        .query( {user: 'tobi'} )
+        .query( {user: 'tobi', filter: '  tobi  '} )
         .expect(200, '<p>tobi</p>', done);
     });
   });
