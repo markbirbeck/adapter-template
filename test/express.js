@@ -11,15 +11,15 @@ var facade = require('..');
  * return a view.
  */
 
-function createApp (engineName){
+function createApp (engineName, templateName, viewsDir){
   var app = express();
 
   app.engine(engineName, facade(engineName).renderFile);
 
-  app.set('views', __dirname + '/fixtures');
+  app.set('views', viewsDir);
 
   app.get('/', function (req, res) {
-    res.render('user.' + engineName, req.query);
+    res.render(templateName, req.query);
   });
 
   return app;
@@ -31,28 +31,31 @@ function createApp (engineName){
 
 describe('Express', function(){
 
+  var viewsDir = __dirname + '/fixtures';
+
   /**
    * The tests are driven by the presence of a template:
    */
 
   var fs = require('fs');
-  var regex = /^user\.(.*)$/;
+  var regex = /^(user|filter)\.(.*)$/;
 
-  fs.readdirSync(__dirname + '/fixtures').map(function (filename){
+  fs.readdirSync(viewsDir).map(function (filename){
     it(filename, function (done){
       filename.should.match(
         regex
-      , 'Use \'user.engine\' as template name, where \'engine\' is engine name.'
+      , 'Use \'user.engine\' or \'filter.engine\' as the template name,' +
+        ' where \'engine\' is the engine name.'
       );
 
       var matches = filename.match(regex);
-      var engineName = matches[1];
+      var engineName = matches[2];
 
-      var app = createApp(engineName);
+      var app = createApp(engineName, filename, viewsDir);
 
       request(app)
         .get('/')
-        .query( {user: 'tobi'} )
+        .query( {user: 'tobi', filter: '  tobi  '} )
         .expect(200, '<p>tobi</p>', done);
     });
   });
