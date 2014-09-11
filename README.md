@@ -28,6 +28,9 @@ See the [adapter-template wiki](https://github.com/stakk/adapter-template/wiki) 
 
 # Changelog
 
+## 2014-09-11 (v0.9.0)
+Add support for filters in Liquid.
+
 ## 2014-07-31 (v0.8.0)
 Add ECT support.
 
@@ -42,7 +45,7 @@ Add Haml support.
 
 Enable modules to provide synchronous or asynchronous `render()` methods.
 
-Create a `render()` method of an engine does not provide one.
+Create a `render()` method if an engine does not provide one.
 
 ## 2014-07-28 (v0.6.0)
 Add handlebars support.

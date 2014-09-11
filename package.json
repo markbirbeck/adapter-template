@@ -1,6 +1,6 @@
 {
   "name": "adapter-template",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Adapters to standardise the interfaces on the plethora of available templating engines.",
   "keywords": [
     "adapter",
@@ -18,19 +18,21 @@
     "toffee",
     "whiskers"
   ],
-  "homepage": "https://github.com/stakk/adapter-template",
-  "bugs": "https://github.com/stakk/adapter-template/issues",
+  "homepage": "https://github.com/sidewinderlabs/adapter-template",
+  "bugs": "https://github.com/sidewinderlabs/adapter-template/issues",
   "license": "MIT",
   "main": "./lib/adapter",
   "repository": {
     "type": "git",
-    "url": "http://github.com/stakk/adapter-template.git"
+    "url": "http://github.com/sidewinderlabs/adapter-template.git"
   },
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
     "broadway": "~0.2.9",
+
+    "adapter-filters": "~0.2.0",
 
     "atpl": "~0.7.7",
     "ect": "~0.5.9",
