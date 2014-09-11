@@ -3,7 +3,7 @@ adapter-template
 
 Adapters to standardise the interfaces on the plethora of available templating engines.
 
-[![wercker status](https://app.wercker.com/status/b56d4ba83550c79c90a82f510dc523df/m/master "wercker status")](https://app.wercker.com/project/bykey/b56d4ba83550c79c90a82f510dc523df)
+[![wercker status](https://app.wercker.com/status/95faee8928ba8b43498da5204d591f94/m "wercker status")](https://app.wercker.com/project/bykey/95faee8928ba8b43498da5204d591f94)
 
 # Documentation
 
