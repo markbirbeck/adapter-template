@@ -28,6 +28,9 @@ See the [adapter-template wiki](https://github.com/stakk/adapter-template/wiki) 
 
 # Changelog
 
+## 2014-09-11 (v0.9.0)
+Add support for filters in Liquid.
+
 ## 2014-07-31 (v0.8.0)
 Add ECT support.
 
