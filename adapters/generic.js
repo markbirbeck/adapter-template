@@ -23,6 +23,7 @@ module.exports = function(language){
 
       var engine = require(languageConfig.module || language);
 
+      this.language = language;
       this.engine = (languageConfig.useConstructor) ? new engine() : engine;
       this.languageConfig = languageConfig;
 
