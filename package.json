@@ -18,13 +18,13 @@
     "toffee",
     "whiskers"
   ],
-  "homepage": "https://github.com/stakk/adapter-template",
-  "bugs": "https://github.com/stakk/adapter-template/issues",
+  "homepage": "https://github.com/sidewinderlabs/adapter-template",
+  "bugs": "https://github.com/sidewinderlabs/adapter-template/issues",
   "license": "MIT",
   "main": "./lib/adapter",
   "repository": {
     "type": "git",
-    "url": "http://github.com/stakk/adapter-template.git"
+    "url": "http://github.com/sidewinderlabs/adapter-template.git"
   },
   "scripts": {
     "test": "mocha"
