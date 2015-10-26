@@ -45,6 +45,7 @@
     "whiskers": "~0.3.3"
   },
   "devDependencies": {
+    "chai": "^3.4.0",
     "express": "~4.13.1",
     "mocha": "~2.2.5",
     "should": "~7.0.2",
