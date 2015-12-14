@@ -3,7 +3,7 @@ var path = require('path');
 
 var should = require('chai').should();
 
-var uut = require('../lib/search-file');
+var uut = require('../lib/searchFile');
 
 describe('#searchFile()', function() {
   var testDir = __dirname;
