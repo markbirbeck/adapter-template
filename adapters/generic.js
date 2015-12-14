@@ -13,7 +13,7 @@ var engineConfig = config.engines || {};
 
 module.exports = function(language){
   return {
-    attach: function (/* options */){
+    attach: function (options){
       var languageConfig = engineConfig[language] || {};
 
       /**
@@ -26,6 +26,7 @@ module.exports = function(language){
       this.language = language;
       this.engine = (languageConfig.useConstructor) ? new engine() : engine;
       this.languageConfig = languageConfig;
+      this.filters = options.filters || languageConfig.filters || language;
 
       /**
        * Add key methods:
