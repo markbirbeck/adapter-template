@@ -31,7 +31,7 @@
     "dockerbuild": "docker build -t adapter-template ."
   },
   "dependencies": {
-    "adapter-filters": "^0.5.2",
+    "adapter-filters": "^0.6.0",
     "atpl": "~0.7.8",
     "broadway": "~0.2.9",
     "config": "~1.0.1",
