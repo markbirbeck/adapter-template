@@ -17,14 +17,11 @@
     "toffee",
     "whiskers"
   ],
-  "homepage": "https://github.com/sidewinderlabs/adapter-template",
-  "bugs": "https://github.com/sidewinderlabs/adapter-template/issues",
+  "homepage": "https://github.com/markbirbeck/adapter-template",
+  "bugs": "https://github.com/markbirbeck/adapter-template/issues",
   "license": "MIT",
   "main": "./lib/adapter",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/sidewinderlabs/adapter-template.git"
-  },
+  "repository": "markbirbeck/adapter-template",
   "scripts": {
     "test": "mocha",
     "docker": "docker run -it -v \"${PWD}\":/usr/src/app adapter-template",
