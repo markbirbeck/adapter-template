@@ -3,8 +3,6 @@ adapter-template
 
 Adapters to standardise the interfaces on the plethora of available templating engines.
 
-[![wercker status](https://app.wercker.com/status/b56d4ba83550c79c90a82f510dc523df/m/master "wercker status")](https://app.wercker.com/project/bykey/b56d4ba83550c79c90a82f510dc523df)
-
 # Documentation
 
 See the [adapter-template wiki](https://github.com/stakk/adapter-template/wiki) for documentation on:
